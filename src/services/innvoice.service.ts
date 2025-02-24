@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 export class InnvoiceService{
     static async getInnvoiceById(innvoiceID: number, innvoiceDT: string){
-        const filePath = "public\\download.pdf";
+        const filePath = "public/download.pdf";
         
         try {
             // Read the PDF file asynchronously
