@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "a4c10cad-5604-4dfe-9896-a6364cab6fd3",
+		"name": "CASZZZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18740139"
+	},
+	"item": [
+		{
+			"name": "Get Innvoice by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<document_request>\r\n    <document_type>invoice</document_type>\r\n    <parameters>\r\n        <entry>\r\n            <key>invoiceID</key>\r\n            <value>04780575495012025</value>\r\n        </entry>\r\n        <entry>\r\n            <key>invoiceDT</key>\r\n            <value>2025-01-20</value>\r\n        </entry>\r\n        <entry>\r\n            <key>mediaType</key>\r\n            <value>pdf</value>\r\n        </entry>\r\n    </parameters>\r\n</document_request>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cazss-endpoint-mock.vercel.app/innvoice/acct/account-functions/document-management-bs/v2/getDocumentByMediaTypeByDocumentID",
+					"protocol": "https",
+					"host": [
+						"cazss-endpoint-mock",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"innvoice",
+						"acct",
+						"account-functions",
+						"document-management-bs",
+						"v2",
+						"getDocumentByMediaTypeByDocumentID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear GCP cache",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://cazss-endpoint-mock.vercel.app/gcp/commercial-customers-service/customers/commercial/v3/customers/evict-cache/customerBaseInformation/278218",
+					"protocol": "https",
+					"host": [
+						"cazss-endpoint-mock",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"gcp",
+						"commercial-customers-service",
+						"customers",
+						"commercial",
+						"v3",
+						"customers",
+						"evict-cache",
+						"customerBaseInformation",
+						"278218"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
