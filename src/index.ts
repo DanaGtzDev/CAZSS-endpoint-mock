@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 const app = express();
 const PORT = 3000;
 
-app.use(express.json()); // Middleware para parsear JSON
+//app.use(express.json()); // Middleware para parsear JSON
 // Middleware para recibir el cuerpo como texto
 app.use(bodyParser.text({ type: "application/xml" }));
 
