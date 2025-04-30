@@ -9,106 +9,156 @@ export class InnvoiceController {
 
   static async getInvoiceInfoByInvoiceId(req: Request, res: Response) {
     res.status(200).header("Content-Type", "application/xml").send(`
-                <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CMSTINVC origin="store" version="3.0.0" templateVersion="3.0.5">
-    <revision>1</revision>
+        <CMSTINVC origin="store" version="3.0.0" templateVersion="3.0.5">
+    <revision>6</revision>
     <locale>en_US</locale>
     <store_details>
-        <number>04780</number>
+        <number>08897</number>
         <address>
-            <line1>1771 WESTERN AVE</line1>
+            <line1>17750 HESPERIAN BL</line1>
             <line2></line2>
-            <city>ALBANY</city>
-            <state_or_province>NY</state_or_province>
-            <postal_code>12203</postal_code>
+            <city>SAN LORENZO</city>
+            <state_or_province>CA</state_or_province>
+            <postal_code>94580</postal_code>
         </address>
-        <phone>5183894083</phone>
+        <phone>5102585179</phone>
     </store_details>
     <customer_details>
-        <business_name>MONRO 35</business_name>
+        <business_name>MONRO MUFFLER 2</business_name>
         <location_num></location_num>
-        <id>762397</id>
+        <id>412696</id>
         <address>
-            <line1>1745 Western Ave</line1>
-            <line2></line2>
-            <city>Albany</city>
-            <state_or_province>NY</state_or_province>
-            <postal_code>12203</postal_code>
+            <line1>999 E Ridge Rd Ste 155</line1>
+            <line2>2nd street</line2>
+            <city>Rochester</city>
+            <state_or_province>NJ</state_or_province>
+            <postal_code>14621</postal_code>
         </address>
         <contact_info>
             <phones>
-                <phone>5184568117</phone>
+                <phone>5852662550</phone>
             </phones>
         </contact_info>
         <cpf></cpf>
         <fid></fid>
     </customer_details>
     <order_info>
-        <invoice_num>04780575495</invoice_num>
-        <unique_id>04780575495012025</unique_id>
-        <po>355912</po>
+        <invoice_num>08897838549</invoice_num>
+        <unique_id>08897838549120224</unique_id>
+        <po>1028374</po>
         <ro></ro>
         <specialist>COMMERCIAL SALES CENTER</specialist>
-        <date>2025-01-20 11: 02: 32</date>
+        <date>2024-12-02 15:03:29</date>
         <due_date></due_date>
         <csr>88</csr>
         <register>35</register>
-        <account_balance xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <cic>100441</cic>
+        <account_balance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <cic>714805</cic>
     </order_info>
     <bill_to/>
     <remit_to/>
-    <note></note>
+    <note>FOR REPLENISHMENT</note>
     <items>
         <vehicle>
             <name></name>
             <products>
                 <product>
-                    <sku>001218654</sku>
-                    <primary_part>STPSYN0W301Q</primary_part>
-                    <alternate_part>STPEURO0W301Q</alternate_part>
-                    <description>STP FULL S</description>
-                    <alternate_description>STP Full Synthetic 0W-30 Motor Oil</alternate_description>
+                    <sku>000231663</sku>
+                    <primary_part>34759</primary_part>
+                    <alternate_part></alternate_part>
+                    <description>DURALAST BRAKE ROT</description>
+                    <alternate_description>Duralast Brake Rotor</alternate_description>
                     <warranty></warranty>
                     <deal/>
                     <deferred_core>
-                        <amount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <amount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
                     </deferred_core>
-                    <list>14.75</list>
-                    <quantity>7</quantity>
-                    <cost>7.42</cost>
+                    <list>53.80</list>
+                    <quantity>94</quantity>
+                    <cost>32.28</cost>
                     <core>0.00</core>
-                    <total>51.94</total>
+                    <total>3034.32</total>
                 </product>
             </products>
             <vehicle_id></vehicle_id>
         </vehicle>
     </items>
     <core_bank>
-        <total_balance>162.00</total_balance>
-        <past_3_balance>0.00</past_3_balance>
-        <cores/>
+        <total_balance>30.00</total_balance>
+        <past_3_balance>30.00</past_3_balance>
+        <cores>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678102</invoice_num>
+                <price>5.00</price>
+                <id>14161</id>
+                <date>2024-07-01</date>
+            </core>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678256</invoice_num>
+                <price>5.00</price>
+                <id>14184</id>
+                <date>2024-07-02</date>
+            </core>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678096</invoice_num>
+                <price>5.00</price>
+                <id>14155</id>
+                <date>2024-07-01</date>
+            </core>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678096</invoice_num>
+                <price>5.00</price>
+                <id>14157</id>
+                <date>2024-07-01</date>
+            </core>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678102</invoice_num>
+                <price>5.00</price>
+                <id>14160</id>
+                <date>2024-07-01</date>
+            </core>
+            <core>
+                <primary_part>35-DLG</primary_part>
+                <description>DURALAST GOLD BAT</description>
+                <invoice_num>08897678096</invoice_num>
+                <price>5.00</price>
+                <id>14156</id>
+                <date>2024-07-01</date>
+            </core>
+        </cores>
     </core_bank>
     <reconciliation>
         <tender>
             <description>ARCredit</description>
-            <number>76239710570</number>
-            <amount>51.94</amount>
-            <approval>AM3M4K</approval>
+            <number>41269610570</number>
+            <amount>3034.32</amount>
+            <approval>ABY2TZ</approval>
         </tender>
     </reconciliation>
     <eca>
-        <fee xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <fee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
     </eca>
     <footer>
-        <subtotal>51.94</subtotal>
+        <subtotal>3034.32</subtotal>
         <tax>0.00</tax>
-        <total>51.94</total>
-        <savings>0.07</savings>
-        <barcode>04780575495012025C</barcode>
-        <pieces>7</pieces>
-        
-
+        <total>3034.32</total>
+        <savings>23.71</savings>
+        <barcode>08897838549120224C</barcode>
+        <pieces>94</pieces>
+        <signature></signature>
+        <fees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </footer>
+</CMSTINVC>
                 `);
   }
 }
